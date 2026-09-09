@@ -56,6 +56,8 @@ function logPrices() {
 //Global Scope
 updateCarousel();
 logPrices();
+
+//zoomable image
 const zoomArea = document.getElementById("zoomImage");
  const zoomImage = document.getElementById("zoomImage");
 
