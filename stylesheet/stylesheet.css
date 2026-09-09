@@ -1,1 +1,4 @@
-body{ background-color: limegreen;}
+body{
+    background-image: linear-gradient(to top, white 70%, green);
+    height: 500vh;
+}
