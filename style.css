@@ -247,6 +247,18 @@ body {
 	margin: 0 auto;
 }
 
+.oversigts_kort{
+display: flex;
+ width: 100%;
+ height: auto;
+ justify-content: center;
+}
+
+.oversigts_kort img{
+	width: 30%;
+	height: auto;
+	padding: 30px;
+}
 
 /* FOOTER */
 
