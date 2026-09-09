@@ -247,17 +247,20 @@ body {
 	margin: 0 auto;
 }
 
-.oversigts_kort{
-display: flex;
+.oversigts_kort {
  width: 100%;
  height: auto;
+ overflow: hidden;
+ position: relative;
+ display: flex;
  justify-content: center;
 }
 
-.oversigts_kort img{
-	width: 30%;
-	height: auto;
-	padding: 30px;
+.oversigts_kort img {
+ width: 30%;
+ height: auto;
+ transform-origin: center center;
+ transition: transform 0.1s ease;
 }
 
 /* FOOTER */
