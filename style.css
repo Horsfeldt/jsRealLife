@@ -1,0 +1,325 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #eef1e8;
+	color: #003f32;
+}
+
+/* HEADER */
+
+.header {
+	height: 80px;
+	background-color: #d9e8b9;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 5px;
+    position: relative;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.menu-button {
+	background: none;
+	border: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: #006b4f;
+}
+
+.opening-info {
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+.logo {
+	text-align: center;
+	text-decoration: none;
+	color: #006b4f;
+	font-size: 18px;
+	line-height: 0.8;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo strong {
+	font-size: 35px;
+}
+
+.header-actions {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.buy-ticket {
+	background-color: #f9a32b;
+	color: white;
+	text-decoration: none;
+	padding: 20px 35px;
+	border-radius: 40px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.cart-button {
+	background-color: transparent;
+	border: 3px solid #006b4f;
+	border-radius: 70%;
+	width: 65px;
+	height: 65px;
+	font-size: 25px;
+}
+
+/* HERO */
+
+.hero {
+	background-color: #b9d99b;
+	text-align: center;
+	padding: 70px 30px 130px;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin: 0 0 40px;
+	color: #003f32;
+}
+
+.hero-images {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+}
+
+.hero-images img {
+	max-width: 500px;
+	height: auto;
+}
+
+.hero-message {
+	background-color: #f8ad3a;
+	color: #003f32;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 35px;
+	border-radius: 50%;
+}
+
+/* BILLET OG ÅRSKORT */
+
+.ticket-options {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 45px;
+	padding: 50px 10%;
+}
+
+.ticket-card,
+.extra-card {
+	background-color: white;
+	padding: 36px;
+	text-align: center;
+	position: relative;
+}
+.ticket-card::before,
+.ticket-card::after,
+.extra-card::before,
+.extra-card::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #eef1e8;
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.ticket-card::before,
+.extra-card::before {
+	left: -15px;
+}
+
+.ticket-card::after,
+.extra-card::after {
+	right: -15px;
+}
+
+.ticket-card h2,
+.extra-card h2 {
+	font-size: 25px;
+	margin-top: 0;
+}
+
+.ticket-card p,
+.extra-card p {
+	font-size: 15px;
+	line-height: 1.5;
+	color: #5c654e;
+}
+
+.card-divider {
+	border-top: 3px dashed #c9dfaa;
+	margin: 35px 0;
+}
+
+.card-bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 35px;
+}
+
+.card-bottom strong,
+.extra-card > strong {
+	font-size: 22px;
+	color: #000;
+	white-space: nowrap;
+}
+
+.primary-button {
+	background-color: #006b4f;
+	color: white;
+	border: none;
+	padding: 18px 30px;
+	border-radius: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+    white-space: nowrap;
+}
+
+.primary-button:hover {
+	background-color: #004f3c;
+}
+
+/* EKSTRA KORT */
+
+.extra-options {
+	display: grid;
+    grid-template-columns: 360px 350px 350px;
+	gap: 45px;
+	padding: 50px 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-options > div {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.extra-options img {
+	width: 400px;
+	height: auto;
+}
+
+.extra-card {
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.extra-card img {
+	width: 160px;
+	height: auto;
+	margin: 0 auto;
+}
+/* FOOTER */
+
+.footer {
+	background-color: #d9eff8;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 100px;
+	padding: 80px 20%;
+}
+
+.footer h2 {
+	font-size: 28px;
+}
+
+.footer h3 {
+	margin-top: 40px;
+}
+
+.footer p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.social-links,
+.app-links {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+.social-links img,
+.app-links img {
+	width: 50px;
+	height: 50px;
+}
+.social-links a,
+.app-links a {
+	background-color: #061b0f;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+/* MOBIL */
+
+@media (max-width: 800px) {
+
+	.header {
+		padding: 15px;
+	}
+
+	.header-actions .buy-ticket {
+		display: none;
+	}
+
+	.hero h1 {
+		font-size: 40px;
+	}
+
+	.hero-images {
+		flex-direction: column;
+	}
+
+	.ticket-options,
+	.extra-options,
+	.footer {
+		grid-template-columns: 1fr;
+	}
+
+	.card-bottom {
+		flex-direction: column;
+	}
+}
+/* Får billetboksene til at hænge sammen med billederne */
+.hero-images {
+    position: relative;
+    z-index: 1;
+}
+
+.ticket-options {
+    position: relative;
+    z-index: 2;
+    margin-top: -180px;
+}
