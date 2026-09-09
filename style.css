@@ -205,6 +205,13 @@ body {
 	background-color: #004f3c;
 }
 
+/*.oversigts_kort {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}*/
+
 /* EKSTRA KORT */
 
 .extra-options {
@@ -239,6 +246,8 @@ body {
 	height: auto;
 	margin: 0 auto;
 }
+
+
 /* FOOTER */
 
 .footer {
