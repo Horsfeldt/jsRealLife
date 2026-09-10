@@ -214,39 +214,121 @@ body {
 
 /* EKSTRA KORT */
 
-.extra-options {
-	display: grid;
-    grid-template-columns: 360px 350px 350px;
-	gap: 45px;
-	padding: 50px 0%;
-    justify-content: center;
-    align-items: center;
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
 
-.extra-options > div {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
+.carousel-track {
+  position: relative;
+  width: 700px;
+  height: 100%;
+}
+
+/* CARDS */
+.card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 320px;
+  height: 100%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* POSITIONS */
+.card.center {
+  transform: translateX(-50%) scale(1.05);
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 3;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.card.left {
+  transform: translateX(-170%) scale(0.9);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.card.right {
+  transform: translateX(70%) scale(0.9);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+/* BUTTON */
+.green-btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70px;
+  width: 60px;
+  background: #333;
+  color: white;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev {
+  left: 50px;
+}
+
+.next {
+  right: 50px;
 }
 
 
-.extra-options img {
-	width: 400px;
-	height: auto;
+.oversigts_kort {
+ width: 100%;
+ height: auto;
+ overflow: hidden;
+ position: relative;
+ display: flex;
+ justify-content: center;
 }
 
-.extra-card {
-	min-height: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+.oversigts_kort img {
+ width: 30%;
+ height: auto;
+ transform-origin: center center;
+ transition: transform 0.1s ease;
 }
-.extra-card img {
-	width: 160px;
-	height: auto;
-	margin: 0 auto;
-}
-
 
 /* FOOTER */
 
@@ -255,7 +337,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 100px;
-	padding: 80px 20%;
+	padding: 50px 20%;
 }
 
 .footer h2 {
