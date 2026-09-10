@@ -1,3 +1,4 @@
+//rawan
 console.log("JS virker");
 // DOM-elementer (ikke-primitive datatyper: objekter)
 const menuButton = document.querySelector(".menu-button");
@@ -98,6 +99,9 @@ function handleTicketClick() {
 // Header "Køb billet"-knap
 const headerBuyTicket = document.getElementById("headerBuyTicket");
 
+
+
+//mikkel
 //carousel
 //Variabler (let/const) og Datatyper
 const cards = Array.from(document.querySelectorAll('.card')); // array (ikke-primitive)
@@ -157,7 +161,7 @@ function logPrices() {
 updateCarousel();
 logPrices();
 
-//zoomable image
+//Nikolas
 const zoomArea = document.getElementById("zoomImage");
  const zoomImage = document.getElementById("zoomImage");
 
