@@ -1,4 +1,3 @@
-//rawan
 console.log("JS virker");
 // DOM-elementer (ikke-primitive datatyper: objekter)
 const menuButton = document.querySelector(".menu-button");
