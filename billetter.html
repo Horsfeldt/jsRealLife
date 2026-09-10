@@ -15,7 +15,7 @@
 		</div>
 		<a href="billetter.html" class="logo">ODENSE<br><strong>ZOO</strong></a>
 		<div class="header-actions">
-		<button class="buy-ticket" id="headerBuyTicket">🎟 Køb billet</button>	
+			<a href="billetter.html" class="buy-ticket"> Køb billet</a>
 			<button class="cart-button" type="button">🛒</button>
 		</div>
 	</header>
@@ -26,11 +26,11 @@
 			<div class="hero-images">
 				<img src="Entrebiletter.webp" alt="Odense ZOO billetter">
 				<img src="årskort.webp" alt="Odense ZOO årskort">
-			
 			</div>
 		</section>
 
 		<section class="ticket-options">
+
 			<article class="ticket-card">
 				<h2>Entrébillet</h2>
 				<p>Køb billet online og spring køen over.</p>
@@ -39,8 +39,28 @@
 					<button class="primary-button" id="buyTicketButton" type="button">Køb billet
 
 					</button>
+
 				</div>
+		
+<div id="ticket-options">
+
+
+    <div class="ticket-input">
+        <label for="adult-tickets">Voksne</label>
+        <input type="number" id="adult-tickets" min="0" value="1">
+    </div>
+
+    <div class="ticket-input">
+        <label for="child-tickets">Børn</label>
+        <input type="number" id="child-tickets" min="0" value="0">
+    </div>
+
+</div>
+	<p id="total-price">Samlet pris: 150 DKK</p>
 			</article>
+
+
+
 
 			<article class="ticket-card">
 				<h2>Årskort</h2>
@@ -50,47 +70,36 @@
 					<button class="primary-button" id="buyAnnualButton" type="button">Køb årskort
 					</button>
 				</div>
+
+				<div id="annual-options">
+
+    <div class="annual-input">
+        <label for="annual-type">Type</label>
+        <select id="annual-type">
+            <option value="adult">Voksen</option>
+            <option value="child">Barn</option>
+            <option value="student">Studerende</option>
+        </select>
+    </div>
+
+    <div class="annual-input">
+        <label for="annual-quantity">Antal</label>
+        <input 
+            type="number"
+            id="annual-quantity"
+            min="1"
+            value="1">
+    </div>
+
+</div>
+
+<p id="annual-price">Samlet pris: 395 DKK</p>
 			</article>
 		</section>
 
-	<!--Carousel!-->
-<section class="carousel">
-  <button class="arrow prev">‹</button>
-
-  <div class="carousel-track">
-    <article class="card" data-price="150">
-      <img src="img1.jpg" alt="">
-      <h2>Giraffodring</h2>
-      <p>Stå ansigt til ansigt med verdens højeste dyr.</p>
-      <button class="green-btn">Køb billet</button>
-    </article>
-
-    <article class="card" data-price="995">
-      <img src="img2.jpg" alt="">
-      <h2>ZOOskoIe i efterårsferien</h2>
-      <p>Ekstra hold den 14.-15. oktober!</p>
-      <button class="green-btn">Bestil plads</button>
-    </article>
-
-    <article class="card" data-price="0">
-      <img src="img3.jpg" alt="">
-      <h2>Studierabat</h2>
-      <p>Spar 15% på billetter og 45% på årskort.</p>
-      <button class="green-btn">Læs mere</button>
-    </article>
-  </div>
-
-  <button class="arrow next">›</button>
-</section>
-
-
-
-
-	</main>
 	<section class="extra-options">
-		
 
-    <!--<div>
+    <div>
         <img src="gavekort.webp" alt="Gavekort">
 
         <article class="extra-card">
@@ -100,7 +109,11 @@
 
 <div class="card-bottom">
     <strong>Fra 50 DKK</strong>
-    <button class="primary-button" type="button">køb gavekort</button>
+    <button class="primary-button" type="button">køb gavekort
+	
+	</button>
+
+</div>
 </div>
         </article>
     </div>
@@ -128,6 +141,11 @@
             <div class="card-bottom">
     <strong>Fra 213 DKK</strong>
     <button class="primary-button" type="button">Studierabat</button>
+</div>
+        </article>
+    </div>
+
+</section>
 
 		</section> !-->
 
@@ -163,5 +181,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/billetter.js" defer></script>
+	<script src="billetter.js" defer></script>
 </html>
+
